@@ -1,0 +1,76 @@
+#detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#container img{
+    flex: 1;
+}
+
+#matter{
+    flex: 1;
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#chip-holder{
+    display: flex;
+    gap: 20px;
+}
+
+.chip{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0.5px solid #E0E0E0;
+}
+.selected-chip{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    background-color: #F05A22;
+    border-radius: 7px;
+}
+#message{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #898989;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 650px) {
+   #container{
+    flex-direction: column;
+    align-items: center;
+   }
+   #container img{
+    width: 90%;
+   }
+   #matter{
+    box-sizing: border-box;
+    padding: 20px;
+
+   }
+
+}
